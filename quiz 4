@@ -1,0 +1,36 @@
+import random
+x = 3
+while(x != 24):
+    print(x)
+    x += 3
+
+s = 0
+num = 0
+num =(int(input('give me a random number  ')))
+while(s != num):
+    s += 1
+    print("SNURFLE")
+
+
+
+def monstergen(b):
+    m = random.randrange(1,100)
+    if b == 'd':
+        if m <= 20:
+            print("a husk has spawned")
+        elif m <= 50:
+            print("a spider has spawned")
+        else:
+            print("a skeleton has spawned")
+    if b == 'f':
+        if m <= 30:
+            print("a zombie has spawned")
+        elif m <= 60:
+            print("a skeleton has spawned")
+        elif m <= 70:
+            print("a witch has spawned")
+        else:
+            print("nothing spawns")
+
+b = (input("what biome are you in (d)esert, or (f)ield "))
+monstergen(b)
